@@ -20,22 +20,23 @@ Parameters:
   ParamPublicSubnet1CIDR:
     Description: Enter the IP range (CIDR notation) for the public subnet in AZ A
     Type: String
-    Default: 10.192.10.0/24
+    Default: 10.0.192.0/24
+
   
   ParamPublicSubnet2CIDR:
     Description: Enter the IP range (CIDR notation)  for the public subnet in AZ B
     Type: String
-    Default: 10.192.11.0/24
+    Default: 10.0.193.0/24
 
   ParamPrivateSubnet1CIDR:
     Description: Enter the IP range (CIDR notation)  for the private subnet in AZ A
     Type: String
-    Default: 10.192.20.0/24
+    Default: 10.0.194.0/24
 
   ParamPrivateSubnet2CIDR:
     Description: Enter the IP range (CIDR notation)  for the private subnet in AZ B
     Type: String
-    Default: 10.192.21.0/24
+    Default: 10.0.195.0/24
  
   SSHLocation:
     Description: The IP address range that can be used to SSH to the EC2 instances

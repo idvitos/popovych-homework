@@ -1,0 +1,9 @@
+env: prod
+deploy_user: ec2-user
+service:
+  db:
+    username: test
+    name: test
+    host: test.example.com
+  s3:
+    bucket_name: my_bucket

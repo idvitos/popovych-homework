@@ -1,0 +1,10 @@
+# - hosts: nginx-by-galaxy-server
+#   become: true
+#   roles:
+#     - nginx-by-galaxy
+
+- hosts: nginx-server
+  become: true
+  remote_user: ec2-user
+  roles:
+   - nginx

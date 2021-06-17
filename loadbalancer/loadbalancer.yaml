@@ -200,11 +200,10 @@ Resources:
       HealthyThresholdCount: 5
       Name: Itea-TG
       Port: 80
-      # Targets:
-      #   - Id:
-      #       - !Ref EC2Instance1
-      #       - !Ref EC2Instance2
-      #     Port: 80
+      Targets: 
+        - Id: !Ref EC2Instance1 
+        - Id: !Ref EC2Instance2
+          Port: 80
       Protocol: HTTP
       TargetType: instance
       UnhealthyThresholdCount: 2

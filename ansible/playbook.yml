@@ -1,10 +1,11 @@
 # - hosts: nginx-by-galaxy-server
 #   become: true
+#   vars:
+#     server_port: 8080
 #   roles:
 #     - nginx-by-galaxy
 
-- hosts: nginx-server
+- hosts: configs
   become: true
-  remote_user: ec2-user
   roles:
-   - nginx
+    - service-configs

@@ -1,0 +1,11 @@
+# - hosts: nginx-by-galaxy-server
+#   become: true
+#   vars:
+#     server_port: 8080
+#   roles:
+#     - nginx-by-galaxy
+
+- hosts: configs
+  become: true
+  roles:
+    - service-configs
